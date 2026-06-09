@@ -1,0 +1,62 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    folder: "src/data/pages"
+    create: true
+    format: frontmatter
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Portfolio"
+    name: "portfolio"
+    folder: "src/data/portfolio"
+    create: true
+    format: json
+    extension: json
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - label: "Services"
+    name: "services"
+    folder: "src/data/services"
+    create: true
+    format: json
+    extension: json
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+
+  - label: "Gallery"
+    name: "gallery"
+    folder: "src/data/gallery"
+    create: true
+    format: json
+    extension: json
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - label: "Settings"
+    name: "settings"
+    files:
+      - label: "General"
+        name: "general"
+        file: "src/data/settings/general.json"
+        format: json
+        fields:
+          - { label: "Company Name", name: "company_name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Address", name: "address", widget: "text" }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string" }

@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsApp from '../components/WhatsApp.astro';
+
+const portfolioModules = import.meta.glob('../data/portfolio/*.json', { eager: true });
+const portfolios = Object.values(portfolioModules).map(m => m.default);
+---
+
+<Layout title="Portfolio - Company Name">
+  <Navbar />
+  <main class="container">
+    <h1>Portfolio</h1>
+    <div class="grid">
+      {portfolios.map((item) => (
+        <div class="card">
+          <img src={item.image} alt={item.title} />
+          <div class="card-body">
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </main>
+  <WhatsApp />
+  <Footer />
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  h1 { text-align: center; margin-bottom: 2rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+  .card-body h3 { margin-bottom: 0.5rem; }
+  .card-body p { color: #64748b; }
+</style>

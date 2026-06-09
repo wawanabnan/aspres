@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsApp from '../components/WhatsApp.astro';
+---
+
+<Layout title="Kontak - Company Name">
+  <Navbar />
+  <main class="container">
+    <h1>Hubungi Kami</h1>
+    <div class="wrapper">
+      <form netlify name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="field">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="field">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+      <div class="info">
+        <h3>Informasi Kontak</h3>
+        <p><strong>Alamat:</strong> Jl. Contoh No. 123, Jakarta</p>
+        <p><strong>Telepon:</strong> 021-1234-5678</p>
+        <p><strong>Email:</strong> info@company.com</p>
+      </div>
+    </div>
+  </main>
+  <WhatsApp />
+  <Footer />
+</Layout>
+
+<style>
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  h1 { text-align: center; margin-bottom: 2rem; }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .field {
+    margin-bottom: 1rem;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    color: #334155;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  button {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  button:hover { background: #2563eb; }
+  .info {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  .info h3 { margin-bottom: 1rem; }
+  .info p { margin-bottom: 0.75rem; color: #475569; }
+  @media (max-width: 768px) {
+    .wrapper { grid-template-columns: 1fr; }
+  }
+</style>

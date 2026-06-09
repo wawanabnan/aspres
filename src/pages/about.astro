@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsApp from '../components/WhatsApp.astro';
+---
+
+<Layout title="Tentang Kami - Company Name">
+  <Navbar />
+  <main class="container">
+    <h1>Tentang Kami</h1>
+    <p>Company Name adalah perusahaan yang bergerak di bidang [bidang usaha]. Berdiri sejak [tahun], kami telah melayani banyak klien dengan hasil yang memuaskan.</p>
+    <h2>Visi</h2>
+    <p>Menjadi perusahaan terdepan di bidang kami.</p>
+    <h2>Misi</h2>
+    <ul>
+      <li>Memberikan layanan terbaik kepada pelanggan</li>
+      <li>Inovasi berkelanjutan dalam setiap layanan</li>
+      <li>Membangun kemitraan jangka panjang</li>
+    </ul>
+  </main>
+  <WhatsApp />
+  <Footer />
+</Layout>
+
+<style>
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  h1 { margin-bottom: 1rem; }
+  h2 { margin-top: 2rem; margin-bottom: 0.5rem; }
+  p { color: #475569; line-height: 1.8; }
+  ul { color: #475569; line-height: 2; padding-left: 1.5rem; }
+</style>

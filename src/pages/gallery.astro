@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsApp from '../components/WhatsApp.astro';
+
+const galleryModules = import.meta.glob('../data/gallery/*.json', { eager: true });
+const gallery = Object.values(galleryModules).map(m => m.default);
+---
+
+<Layout title="Galeri - Company Name">
+  <Navbar />
+  <main class="container">
+    <h1>Galeri</h1>
+    <div class="grid">
+      {gallery.map((item) => (
+        <div class="item">
+          <img src={item.image} alt={item.title || 'Galeri'} loading="lazy" />
+        </div>
+      ))}
+    </div>
+  </main>
+  <WhatsApp />
+  <Footer />
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  h1 { text-align: center; margin-bottom: 2rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  .item {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  .item img:hover {
+    transform: scale(1.05);
+  }
+</style>
