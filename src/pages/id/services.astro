@@ -1,61 +1,61 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
-import WhatsApp from '../components/WhatsApp.astro';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import WhatsApp from '../../components/WhatsApp.astro';
 
-const serviceModules = import.meta.glob('../data/en/services/*.json', { eager: true });
+const serviceModules = import.meta.glob('../../../data/id/id/services/*.json', { eager: true });
 const services = Object.values(serviceModules).map(m => m.default);
 
 const details = {
   'Project Cargo Logistics': {
     items: [
-      'Route Survey & infrastructure strength analysis',
-      'Special road permit management and police escort',
-      'Multi-Modal Management — multi-axle trailers, barge chartering, heavy-crane',
-      'On-site supervision according to HSE standards',
+      'Studi Kelayakan Rute (Route Survey) & analisis kekuatan infrastruktur',
+      'Pengurusan perizinan jalan khusus dan pengawalan kepolisian (escort)',
+      'Manajemen Multi-Moda — trailer multi-axle, sewa kapal tongkang, heavy-crane',
+      'Pengawasan ketat di lokasi (on-site supervision) sesuai standar HSE',
     ],
   },
   'Dry Bulk & Mineral Logistics': {
     items: [
-      'Land transport mobilization from mining concession areas to stockpile & jetty',
-      'Barge loading to transshipment to mother vessel',
-      'Precision time management to eliminate demurrage risk',
-      'Domestic document (SKAB), export customs, surveyor coordination',
+      'Mobilisasi angkutan darat dari area konsesi tambang ke stockpile & jetty',
+      'Pemuatan tongkang hingga transshipment ke mother vessel',
+      'Manajemen waktu presisi untuk menghindari risiko demurrage',
+      'Pengurusan dokumen domestik (SKAB), kepabeanan ekspor, koordinasi surveyor',
     ],
   },
-  'Forwarding (Land, Sea, & Air)': {
+  'Forwarding (Darat, Laut, & Udara)': {
     items: [
       'Full Container Load (FCL) & Less Container Load (LCL)',
-      'Air Freight for time-sensitive commodities',
-      'Cargo consolidation from multiple origins for cost efficiency',
+      'Air Freight untuk komoditas time-sensitive',
+      'Konsolidasi kargo dari berbagai titik asal untuk efisiensi biaya',
     ],
   },
   'Customs Clearance & Compliance': {
     items: [
-      'Export-Import document management (PEB/PIB)',
-      'Customs channel inspection (Green, Yellow, Red)',
-      'HS Code consultation, duties, taxes, & customs facility utilization',
+      'Pengurusan PEB/PIB (ekspor-impor)',
+      'Pemeriksaan jalur kepabeanan (Hijau, Kuning, Merah)',
+      'Konsultasi HS Code, bea masuk, pajak, & fasilitas kepabeanan',
     ],
   },
   'Supply Chain Solutions & Contract Logistics': {
     items: [
-      'End-to-end distribution route optimization',
-      'Digital-integrated warehouse management & inventory control',
-      'Single Point of Contact for all logistics activities',
+      'Optimasi rute distribusi hulu-ke-hilir',
+      'Manajemen penyimpanan & kontrol inventaris terintegrasi digital',
+      'Single Point of Contact untuk seluruh aktivitas logistik',
     ],
   },
 };
 ---
 
-<Layout title="Services - Dakarash">
-  <Navbar />
+<Layout title="Layanan - Dakarash">
+  <Navbar locale="id" />
   <main>
     <section class="hero-sm">
       <div class="container">
-        <div class="section-label">SERVICES</div>
-        <h1>Our Logistics Expertise</h1>
-        <p>From large-scale project cargo to regular distribution — we deliver comprehensive logistics solutions for your business.</p>
+        <div class="section-label">LAYANAN</div>
+        <h1>Kompetensi Logistik Kami</h1>
+        <p>Dari kargo proyek berskala besar hingga distribusi reguler — kami hadirkan solusi logistik menyeluruh untuk bisnis Anda.</p>
       </div>
     </section>
 
@@ -85,7 +85,7 @@ const details = {
     </section>
   </main>
   <WhatsApp />
-  <Footer />
+  <Footer locale="id" />
 </Layout>
 
 <style>
@@ -177,3 +177,5 @@ const details = {
     .service-item { padding: 1.5rem; }
   }
 </style>
+
+

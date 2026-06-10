@@ -6,45 +6,193 @@ media_folder: public/images
 public_folder: /images
 
 collections:
-  - label: "Pages"
-    name: "pages"
-    folder: "src/data/pages"
-    create: true
-    format: frontmatter
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  - label: "Portfolio"
-    name: "portfolio"
-    folder: "src/data/portfolio"
-    create: true
-    format: json
-    extension: json
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
+  - label: "About"
+    name: "about"
+    files:
+      - label: "English"
+        name: "about_en"
+        file: "src/data/en/about.json"
+        format: json
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Paragraph, name: paragraph, widget: text }
+          - { label: Vision Heading, name: vision_heading, widget: string }
+          - { label: Vision Text, name: vision_text, widget: text }
+          - { label: Mission Heading, name: mission_heading, widget: string }
+          - { label: Mission Items, name: mission_items, widget: list, field: { label: Item, name: item, widget: text } }
+      - label: "Indonesian"
+        name: "about_id"
+        file: "src/data/id/about.json"
+        format: json
+        fields:
+          - { label: Judul, name: heading, widget: string }
+          - { label: Paragraf, name: paragraph, widget: text }
+          - { label: Judul Visi, name: vision_heading, widget: string }
+          - { label: Teks Visi, name: vision_text, widget: text }
+          - { label: Judul Misi, name: mission_heading, widget: string }
+          - { label: Item Misi, name: mission_items, widget: list, field: { label: Item, name: item, widget: text } }
 
   - label: "Services"
     name: "services"
-    folder: "src/data/services"
-    create: true
-    format: json
-    extension: json
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+    files:
+      - label: "Project Cargo (EN)"
+        name: "svc_pc_en"
+        file: "src/data/en/services/project-cargo.json"
+        format: json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+      - label: "Dry Bulk & Mineral (EN)"
+        name: "svc_db_en"
+        file: "src/data/en/services/dry-bulk-mineral.json"
+        format: json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+      - label: "Forwarding (EN)"
+        name: "svc_fw_en"
+        file: "src/data/en/services/forwarding.json"
+        format: json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+      - label: "Customs Clearance (EN)"
+        name: "svc_cc_en"
+        file: "src/data/en/services/customs-clearance.json"
+        format: json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+      - label: "Supply Chain (EN)"
+        name: "svc_sc_en"
+        file: "src/data/en/services/supply-chain.json"
+        format: json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+      - label: "Project Cargo (ID)"
+        name: "svc_pc_id"
+        file: "src/data/id/services/project-cargo.json"
+        format: json
+        fields:
+          - { label: Judul, name: title, widget: string }
+          - { label: Deskripsi, name: description, widget: text }
+      - label: "Dry Bulk & Mineral (ID)"
+        name: "svc_db_id"
+        file: "src/data/id/services/dry-bulk-mineral.json"
+        format: json
+        fields:
+          - { label: Judul, name: title, widget: string }
+          - { label: Deskripsi, name: description, widget: text }
+      - label: "Forwarding (ID)"
+        name: "svc_fw_id"
+        file: "src/data/id/services/forwarding.json"
+        format: json
+        fields:
+          - { label: Judul, name: title, widget: string }
+          - { label: Deskripsi, name: description, widget: text }
+      - label: "Customs Clearance (ID)"
+        name: "svc_cc_id"
+        file: "src/data/id/services/customs-clearance.json"
+        format: json
+        fields:
+          - { label: Judul, name: title, widget: string }
+          - { label: Deskripsi, name: description, widget: text }
+      - label: "Supply Chain (ID)"
+        name: "svc_sc_id"
+        file: "src/data/id/services/supply-chain.json"
+        format: json
+        fields:
+          - { label: Judul, name: title, widget: string }
+          - { label: Deskripsi, name: description, widget: text }
+
+  - label: "Technology"
+    name: "technology"
+    files:
+      - label: "English"
+        name: "tech_en"
+        file: "src/data/en/technology.json"
+        format: json
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: Description, name: description, widget: text }
+      - label: "Indonesian"
+        name: "tech_id"
+        file: "src/data/id/technology.json"
+        format: json
+        fields:
+          - { label: Judul, name: title, widget: string }
+          - { label: Subjudul, name: subtitle, widget: string }
+          - { label: Deskripsi, name: description, widget: text }
+
+  - label: "Contact"
+    name: "contact"
+    files:
+      - label: "English"
+        name: "contact_en"
+        file: "src/data/en/contact.json"
+        format: json
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Name Label, name: name_label, widget: string }
+          - { label: Email Label, name: email_label, widget: string }
+          - { label: Message Label, name: message_label, widget: string }
+          - { label: Submit Text, name: submit_text, widget: string }
+          - { label: Info Heading, name: info_heading, widget: string }
+      - label: "Indonesian"
+        name: "contact_id"
+        file: "src/data/id/contact.json"
+        format: json
+        fields:
+          - { label: Judul, name: heading, widget: string }
+          - { label: Label Nama, name: name_label, widget: string }
+          - { label: Label Email, name: email_label, widget: string }
+          - { label: Label Pesan, name: message_label, widget: string }
+          - { label: Teks Kirim, name: submit_text, widget: string }
+          - { label: Judul Info, name: info_heading, widget: string }
 
   - label: "Gallery"
-    name: "gallery"
+    name: "gallery_en"
     folder: "src/data/gallery"
     create: true
     format: json
     extension: json
     fields:
-      - { label: "Title", name: "title", widget: "string", required: false }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: Title, name: title, widget: string, required: false }
+      - { label: Image, name: image, widget: image }
+
+  - label: "Galeri (ID)"
+    name: "gallery_id"
+    folder: "src/data/id/gallery"
+    create: true
+    format: json
+    extension: json
+    fields:
+      - { label: Judul, name: title, widget: string, required: false }
+      - { label: Gambar, name: image, widget: image }
+
+  - label: "Portfolio"
+    name: "portfolio_en"
+    folder: "src/data/portfolio"
+    create: true
+    format: json
+    extension: json
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Image, name: image, widget: image }
+
+  - label: "Portofolio (ID)"
+    name: "portfolio_id"
+    folder: "src/data/id/portfolio"
+    create: true
+    format: json
+    extension: json
+    fields:
+      - { label: Judul, name: title, widget: string }
+      - { label: Deskripsi, name: description, widget: text }
+      - { label: Gambar, name: image, widget: image }
 
   - label: "Settings"
     name: "settings"
@@ -54,9 +202,9 @@ collections:
         file: "src/data/settings/general.json"
         format: json
         fields:
-          - { label: "Company Name", name: "company_name", widget: "string" }
-          - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Phone", name: "phone", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
-          - { label: "Address", name: "address", widget: "text" }
-          - { label: "WhatsApp Number", name: "whatsapp", widget: "string" }
+          - { label: Company Name, name: company_name, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Address, name: address, widget: text }
+          - { label: WhatsApp Number, name: whatsapp, widget: string }

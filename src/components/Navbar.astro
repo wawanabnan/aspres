@@ -1,62 +1,101 @@
 ---
-const menu = [
-  { label: 'Beranda', href: '/' },
-  { label: 'Tentang', href: '/about' },
-  { label: 'Layanan', href: '/services' },
-  { label: 'Portfolio', href: '/portfolio' },
-  { label: 'Galeri', href: '/gallery' },
-  { label: 'Kontak', href: '/contact' },
+const { locale = 'en', transparent = false } = Astro.props;
+
+const menu = locale === 'id' ? [
+  { label: 'Beranda', href: '/id' },
+  { label: 'Tentang', href: '/id/about' },
+  { label: 'Layanan', href: '/id/services' },
+  { label: 'Technology', href: '/id/technology' },
+  { label: 'Kontak', href: '/id/contact' },
+] : [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Technology', href: '/technology' },
+  { label: 'Contact', href: '/contact' },
 ];
 ---
 
-<nav>
+<nav class:list={{ 'nav-transparent': transparent }}>
   <div class="container">
-    <a href="/" class="logo">Company</a>
-    <button class="hamburger" aria-label="Menu">&#9776;</button>
+    <a href={locale === 'id' ? '/id' : ''} class="logo">
+      <img src="/images/logo_transparent.png" alt="Dakarash" style="height:2.25rem" />
+    </a>
+    <button class="hamburger" aria-label="Menu">☰</button>
     <ul class="nav-menu">
       {menu.map((item) => (
         <li><a href={item.href}>{item.label}</a></li>
       ))}
+      <li>
+        <a href={locale === 'id' ? 'https://kargopath.dakarash.co.id' : 'https://kargopath.dakarash.co.id'} class="nav-cta">
+          {locale === 'id' ? 'Request Quotation' : 'Request Quotation'}
+        </a>
+      </li>
+      <li class="lang-switch">
+        <a href={locale === 'id' ? '/' : '/id'} class="lang-link">
+          {locale === 'id' ? 'EN' : 'ID'}
+        </a>
+      </li>
     </ul>
   </div>
 </nav>
 
 <style>
   nav {
-    background: #1e293b;
-    padding: 1rem 0;
+    background: #0f172a;
+    padding: 1.125rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
   }
+  nav.nav-transparent { background: transparent; }
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .logo {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
-  }
+  .logo { display: flex; align-items: center; }
   .nav-menu {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 0.25rem;
     margin: 0;
     padding: 0;
   }
   .nav-menu a {
-    color: #cbd5e1;
+    color: #94a3b8;
     text-decoration: none;
-    transition: color 0.2s;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s, background 0.2s;
   }
   .nav-menu a:hover {
     color: #fff;
+    background: rgba(255,255,255,0.06);
+  }
+  .nav-cta {
+    background: #2563eb !important;
+    color: #fff !important;
+    margin-left: 0.5rem;
+  }
+  .nav-cta:hover {
+    background: #1d4ed8 !important;
+  }
+  .lang-link {
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    border: 1.5px solid rgba(255,255,255,0.2);
+    padding: 0.3rem 0.75rem !important;
+    margin-left: 0.5rem;
+  }
+  .lang-link:hover {
+    border-color: #fff;
   }
   .hamburger {
     display: none;
@@ -65,11 +104,10 @@ const menu = [
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
+    padding: 0.25rem;
   }
   @media (max-width: 768px) {
-    .hamburger {
-      display: block;
-    }
+    .hamburger { display: block; }
     .nav-menu {
       display: none;
       flex-direction: column;
@@ -77,12 +115,13 @@ const menu = [
       top: 100%;
       left: 0;
       right: 0;
-      background: #1e293b;
-      padding: 1rem;
+      background: #0f172a;
+      padding: 0.5rem 1.5rem 1.5rem;
     }
-    .nav-menu.open {
-      display: flex;
-    }
+    .nav-menu.open { display: flex; }
+    .nav-menu a { padding: 0.75rem 1rem; }
+    .nav-cta { margin-left: 0; margin-top: 0.5rem; text-align: center; }
+    .lang-link { margin-left: 0; margin-top: 0.5rem; align-self: flex-start; }
   }
 </style>
 

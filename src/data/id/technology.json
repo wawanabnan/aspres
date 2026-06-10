@@ -1,0 +1,15 @@
+{
+  "title": "Dakarash Tech",
+  "subtitle": "Powered by Kargopath",
+  "description": "Platform teknologi logistik yang memotong birokrasi email & WhatsApp — dari inquiry hingga tracking, semua dalam satu dasbor.",
+  "features": [
+    { "title": "Instant Inquiry & Auto-Quotation", "text": "Klien memasukkan spesifikasi kargo dan rute, lalu sistem otomatis memproses penawaran harga resmi tanpa waktu tunggu. Tidak perlu bolak-balik email atau WhatsApp untuk mendapatkan quotation." },
+    { "title": "Real-Time Tracking & Visibility", "text": "Integrasi visibilitas perjalanan multi-moda — pantau posisi truk di darat hingga koordinat tongkang di laut secara live, lengkap dengan estimasi waktu kedatangan (ETA)." },
+    { "title": "Digital Document Hub", "text": "Penyimpanan terpusat untuk Bill of Lading (B/L), Surat Kuasa Asal Barang (SKAB), dokumen pabean, dan invoice digital. Bebas risiko berkas hilang atau tercecer." },
+    { "title": "Data-Driven Analytics", "text": "Dasbor yang menyajikan laporan tren pengeluaran logistik bulanan dan performa ketepatan waktu pengiriman (SLA) vendor — membantu efisiensi anggaran korporasi." }
+  ],
+  "cta_heading": "Siap Mengoptimalkan Logistik Anda?",
+  "cta_text": "Coba sendiri platform Kargopath dan dapatkan quotation instan.",
+  "cta_button_text": "Coba Cek Harga Sekarang",
+  "cta_button_url": "https://kargopath.dakarash.co.id"
+}

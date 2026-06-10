@@ -1,13 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
-import WhatsApp from '../components/WhatsApp.astro';
-import data from '../data/en/homepage.json';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import WhatsApp from '../../components/WhatsApp.astro';
+import data from '../../data/id/homepage.json';
 ---
 
-<Layout title="Dakarash - Trusted 3PL Logistics Solutions">
-  <Navbar transparent={true} />
+<Layout title="Dakarash - Solusi Logistik 3PL Terpercaya">
+  <Navbar locale="id" transparent={true} />
   <main>
     <section class="hero-slider">
       <div class="slides">
@@ -25,8 +25,8 @@ import data from '../data/en/homepage.json';
           </div>
         ))}
       </div>
-      <button class="slider-arrow prev" aria-label="Previous">&#10094;</button>
-      <button class="slider-arrow next" aria-label="Next">&#10095;</button>
+      <button class="slider-arrow prev" aria-label="Sebelumnya">&#10094;</button>
+      <button class="slider-arrow next" aria-label="Berikutnya">&#10095;</button>
       <div class="slider-dots"></div>
     </section>
 
@@ -82,7 +82,7 @@ import data from '../data/en/homepage.json';
     </section>
   </main>
   <WhatsApp />
-  <Footer />
+  <Footer locale="id" />
 </Layout>
 
 <style>
@@ -294,7 +294,7 @@ import data from '../data/en/homepage.json';
 
     slides.forEach((_, i) => {
       const dot = document.createElement('button');
-      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      dot.setAttribute('aria-label', 'Ke slide ' + (i + 1));
       if (i === 0) dot.classList.add('active');
       dot.addEventListener('click', () => goTo(i));
       dotsContainer.appendChild(dot);
@@ -322,3 +322,4 @@ import data from '../data/en/homepage.json';
     resetInterval();
   })();
 </script>
+

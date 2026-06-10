@@ -1,0 +1,19 @@
+{
+  "heading": "About Dakarash",
+  "paragraph": "Dakarash is part of PT. Dakara Hanasta Samudra, a company operating in the 3PL (Third Party Logistics) services sector. We are here to become a trusted logistics partner for your business — connecting supply chains with integrated, precise, and technology-driven solutions.",
+  "vision_heading": "Vision",
+  "vision_text": "To become Indonesia's leading 3PL logistics company integrated with cutting-edge technology.",
+  "mission_heading": "Mission",
+  "mission_items": [
+    "Provide efficient and transparent integrated logistics solutions",
+    "Prioritize accuracy, safety, and compliance in every shipment",
+    "Build long-term partnerships based on trust and innovation",
+    "Develop the Kargopath technology platform to simplify client operations"
+  ],
+  "hse_heading": "Risk Management & Safety",
+  "hse_items": [
+    { "title": "HSE Compliance", "text": "Strict selection of partner vendors who implement high safety procedures during heavy lifting activities." },
+    { "title": "All-Risk Insurance", "text": "Comprehensive financial protection coverage for high-value cargo during transit." },
+    { "title": "24/7 Contingency", "text": "A crisis management team ready to reroute or change modes in case of weather anomalies or technical issues." }
+  ]
+}

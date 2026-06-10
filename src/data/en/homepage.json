@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "slides": [
+      {
+        "heading": "Global Logistics Navigation with Proven Experience and Unlimited Network",
+        "paragraph": "Connecting your supply chain with integrated, precise, and technology-driven logistics solutions.",
+        "cta_primary": { "text": "Request Quotation", "url": "https://kargopath.dakarash.co.id" },
+        "cta_secondary": { "text": "Our Services", "url": "/services" }
+      },
+      {
+        "heading": "End-to-End Logistics Services Across All Modes",
+        "paragraph": "From project cargo and dry bulk to forwarding, customs clearance, and supply chain management — we cover every link in your logistics chain.",
+        "cta_primary": { "text": "Explore Services", "url": "/services" },
+        "cta_secondary": { "text": "Contact Us", "url": "/contact" }
+      },
+      {
+        "heading": "Powered by Kargopath — Digital Logistics Platform",
+        "paragraph": "Real-time tracking, instant quotations, digital document management, and data-driven analytics — all in one integrated dashboard.",
+        "cta_primary": { "text": "Try Kargopath", "url": "https://kargopath.dakarash.co.id" },
+        "cta_secondary": { "text": "Learn More", "url": "/technology" }
+      }
+    ]
+  },
+  "steps": {
+    "label": "HOW IT WORKS",
+    "heading": "3 Easy Steps to Manage Your Logistics",
+    "description": "From inquiry to tracking, all in one integrated platform.",
+    "items": [
+      {
+        "number": 1,
+        "title": "Ask Inquiry",
+        "text": "Enter your cargo details into Kargopath platform, get an instant official quotation without the hassle of email or WhatsApp bureaucracy."
+      },
+      {
+        "number": 2,
+        "title": "Book Shipment",
+        "text": "Approve the price offer with one click, our system immediately mobilizes the best vendor network for execution."
+      },
+      {
+        "number": 3,
+        "title": "Track & Relax",
+        "text": "Monitor cargo movement in real-time from the mine/factory site to the destination port through your dashboard."
+      }
+    ]
+  },
+  "tech": {
+    "label": "TECHNOLOGY",
+    "heading": "Dakarash Tech",
+    "description": "Powered by Kargopath — Digital logistics platform that cuts through bureaucracy.",
+    "items": [
+      {
+        "icon": "📊",
+        "title": "Instant Inquiry & Auto-Quotation",
+        "text": "Enter cargo specifications and route, the system automatically processes official price quotations with no waiting time."
+      },
+      {
+        "icon": "📍",
+        "title": "Real-Time Tracking & Visibility",
+        "text": "Monitor truck positions on land to barge coordinates at sea live with ETA estimates."
+      },
+      {
+        "icon": "📁",
+        "title": "Digital Document Hub",
+        "text": "Centralized storage for B/L, SKAB, customs documents, and digital invoices. No more lost documents."
+      },
+      {
+        "icon": "📈",
+        "title": "Data-Driven Analytics",
+        "text": "Dashboard with monthly logistics spending trend reports and vendor on-time delivery SLA performance."
+      }
+    ]
+  },
+  "hse": {
+    "label": "SAFETY & RISK",
+    "heading": "Risk Management & Safety",
+    "description": "We ensure every shipment runs safely and according to standards.",
+    "items": [
+      {
+        "icon": "🛡️",
+        "title": "HSE Compliance",
+        "text": "Strict selection of partner vendors who implement high safety procedures in the field during heavy lifting activities."
+      },
+      {
+        "icon": "✅",
+        "title": "All-Risk Insurance",
+        "text": "Comprehensive financial protection coverage for high-value cargo during transit."
+      },
+      {
+        "icon": "🔧",
+        "title": "24/7 Contingency",
+        "text": "A crisis management team ready to reroute or change modes tactically in case of weather anomalies or technical issues."
+      }
+    ]
+  }
+}

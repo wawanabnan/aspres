@@ -1,17 +1,17 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
-import WhatsApp from '../components/WhatsApp.astro';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import WhatsApp from '../../components/WhatsApp.astro';
 
-const galleryModules = import.meta.glob('../data/en/gallery/*.json', { eager: true });
+const galleryModules = import.meta.glob('../../../data/id/id/gallery/*.json', { eager: true });
 const gallery = Object.values(galleryModules).map(m => m.default);
 ---
 
-<Layout title="Gallery - Dakarash">
-  <Navbar />
+<Layout title="Galeri - Company Name">
+  <Navbar locale="id" />
   <main class="container">
-    <h1>Gallery</h1>
+    <h1>Galeri</h1>
     <div class="grid">
       {gallery.map((item) => (
         <div class="item">
@@ -21,7 +21,7 @@ const gallery = Object.values(galleryModules).map(m => m.default);
     </div>
   </main>
   <WhatsApp />
-  <Footer />
+  <Footer locale="id" />
 </Layout>
 
 <style>
@@ -50,3 +50,5 @@ const gallery = Object.values(galleryModules).map(m => m.default);
     transform: scale(1.05);
   }
 </style>
+
+

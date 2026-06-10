@@ -1,0 +1,15 @@
+{
+  "title": "Dakarash Tech",
+  "subtitle": "Powered by Kargopath",
+  "description": "A logistics technology platform that cuts through email & WhatsApp bureaucracy — from inquiry to tracking, all in one dashboard.",
+  "features": [
+    { "title": "Instant Inquiry & Auto-Quotation", "text": "Clients enter cargo specifications and route, the system automatically processes official price quotations with no waiting time. No more back-and-forth emails or WhatsApp messages." },
+    { "title": "Real-Time Tracking & Visibility", "text": "Multi-modal journey visibility integration — monitor truck positions on land to barge coordinates at sea live, complete with estimated time of arrival (ETA)." },
+    { "title": "Digital Document Hub", "text": "Centralized storage for Bill of Lading (B/L), Certificates of Origin (SKAB), customs documents, and digital invoices. No risk of lost or misplaced documents." },
+    { "title": "Data-Driven Analytics", "text": "Dashboard presenting monthly logistics spending trend reports and vendor on-time delivery (SLA) performance — helping corporate budget efficiency." }
+  ],
+  "cta_heading": "Ready to Optimize Your Logistics?",
+  "cta_text": "Try the Kargopath platform yourself and get an instant quotation.",
+  "cta_button_text": "Request Quotation",
+  "cta_button_url": "https://kargopath.dakarash.co.id"
+}

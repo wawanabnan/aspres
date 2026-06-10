@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "slides": [
+      {
+        "heading": "Navigasi Logistik Global dengan Pengalaman Teruji dan Jaringan Tanpa Batas",
+        "paragraph": "Menghubungkan Rantai Pasok Anda dengan Solusi Logistik Terintegrasi, Presisi, dan Berbasis Teknologi.",
+        "cta_primary": { "text": "Coba Cek Harga Sekarang", "url": "https://kargopath.dakarash.co.id" },
+        "cta_secondary": { "text": "Lihat Layanan", "url": "/services" }
+      },
+      {
+        "heading": "Layanan Logistik End-to-End Semua Moda",
+        "paragraph": "Dari project cargo, dry bulk, forwarding, kepabeanan, hingga supply chain — kami mencakup setiap mata rantai logistik Anda.",
+        "cta_primary": { "text": "Jelajahi Layanan", "url": "/services" },
+        "cta_secondary": { "text": "Hubungi Kami", "url": "/contact" }
+      },
+      {
+        "heading": "Powered by Kargopath — Platform Logistik Digital",
+        "paragraph": "Pelacakan real-time, quotation instan, manajemen dokumen digital, dan analitik data — semua dalam satu dasbor terintegrasi.",
+        "cta_primary": { "text": "Coba Kargopath", "url": "https://kargopath.dakarash.co.id" },
+        "cta_secondary": { "text": "Pelajari", "url": "/technology" }
+      }
+    ]
+  },
+  "steps": {
+    "label": "CARA KERJA",
+    "heading": "3 Langkah Mudah Proses Logistik Anda",
+    "description": "Dari inquiry hingga tracking, semua dalam satu platform terintegrasi.",
+    "items": [
+      {
+        "number": 1,
+        "title": "Ask Inquiry",
+        "text": "Masukkan detail kargo Anda ke platform Kargopath, dapatkan quotation resmi instan tanpa ribet birokrasi email atau WhatsApp."
+      },
+      {
+        "number": 2,
+        "title": "Book Shipment",
+        "text": "Setujui penawaran harga dengan satu klik, sistem kami langsung menggerakkan jaringan vendor terbaik untuk eksekusi."
+      },
+      {
+        "number": 3,
+        "title": "Track & Relax",
+        "text": "Pantau pergerakan kargo secara real-time dari titik tambang/pabrik hingga ke pelabuhan tujuan melalui dasbor Anda."
+      }
+    ]
+  },
+  "tech": {
+    "label": "TEKNOLOGI",
+    "heading": "Dakarash Tech",
+    "description": "Powered by Kargopath — Platform logistik digital yang memotong birokrasi.",
+    "items": [
+      {
+        "icon": "📊",
+        "title": "Instant Inquiry & Auto-Quotation",
+        "text": "Masukkan spesifikasi kargo, sistem otomatis memproses penawaran harga resmi tanpa waktu tunggu."
+      },
+      {
+        "icon": "📍",
+        "title": "Real-Time Tracking & Visibility",
+        "text": "Pantau posisi truk di darat hingga koordinat tongkang di laut secara live dengan estimasi ETA."
+      },
+      {
+        "icon": "📁",
+        "title": "Digital Document Hub",
+        "text": "Penyimpanan terpusat untuk B/L, SKAB, dokumen pabean, dan invoice digital. Bebas risiko berkas hilang."
+      },
+      {
+        "icon": "📈",
+        "title": "Data-Driven Analytics",
+        "text": "Dasbor dengan laporan tren pengeluaran logistik bulanan dan performa ketepatan waktu pengiriman vendor."
+      }
+    ]
+  },
+  "hse": {
+    "label": "KESELAMATAN & RISIKO",
+    "heading": "Tata Kelola Risiko & Keselamatan",
+    "description": "Kami memastikan setiap pengiriman berjalan aman dan sesuai standar.",
+    "items": [
+      {
+        "icon": "🛡️",
+        "title": "Kepatuhan HSE",
+        "text": "Menyeleksi ketat hanya vendor mitra yang menerapkan prosedur keselamatan kerja tinggi di lapangan."
+      },
+      {
+        "icon": "✅",
+        "title": "Asuransi All-Risk",
+        "text": "Jaminan perlindungan finansial menyeluruh atas kargo bernilai tinggi selama masa transit."
+      },
+      {
+        "icon": "🔧",
+        "title": "Kontinjensi 24/7",
+        "text": "Tim manajemen krisis siap mengalihkan rute atau mengganti moda secara taktis jika terjadi anomali."
+      }
+    ]
+  }
+}

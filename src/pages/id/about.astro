@@ -1,13 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
-import WhatsApp from '../components/WhatsApp.astro';
-import data from '../data/en/about.json';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import WhatsApp from '../../components/WhatsApp.astro';
+import data from '../../data/id/about.json';
 ---
 
-<Layout title="About Us - Dakarash">
-  <Navbar />
+<Layout title="Tentang Kami - Dakarash">
+  <Navbar locale="id" />
   <main class="container">
     <section class="about">
       <h1>{data.heading}</h1>
@@ -38,7 +38,7 @@ import data from '../data/en/about.json';
     </section>
   </main>
   <WhatsApp />
-  <Footer />
+  <Footer locale="id" />
 </Layout>
 
 <style>
@@ -115,3 +115,5 @@ import data from '../data/en/about.json';
     .grid { grid-template-columns: 1fr; }
   }
 </style>
+
+
